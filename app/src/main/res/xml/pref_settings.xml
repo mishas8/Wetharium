@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="screen"
+    android:summary="@string/setup_label"
+    android:title="@string/setup_label">
+
+    <ListPreference
+        android:key="key_pref_city"
+        android:title="@string/city_label"
+        android:defaultValue="536203"
+        android:summary="@string/city_picker"
+
+        android:dialogTitle="Выберите город" />
+
+    <com.exsoft.weatharium.view.NumberPickerPreference
+            android:key="key_weather_cnt"
+            android:title="@string/setup_forecast_cnt_label"
+            android:defaultValue="5" />
+
+    <SwitchPreference
+        android:key="key_metric_units"
+        android:summary="Единицы измерения тепературы"
+        android:title="@string/setup_temp_label"
+        android:defaultValue="true"
+        android:summaryOn="℃"
+        android:summaryOff="°F" />
+
+</PreferenceScreen>

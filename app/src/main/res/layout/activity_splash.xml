@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:gravity="center|end"
+    android:background="#FF00FFFF">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/splashImage"
+        android:layout_gravity="top|center"
+        android:src="@drawable/splash_loading"/>
+
+    <TextView
+        android:textColor="@color/headerAppDDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weatharium"
+        android:id="@+id/textView"
+        android:textSize="35dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal" />
+</LinearLayout>
